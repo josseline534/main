@@ -14,7 +14,7 @@ export const DATA_COMPANIES = [
     index: 'nixi1',
     src: nixi1,
     name: 'Nixi 1',
-    link: 'https://nixi1.com/es/'
+    link: 'https://op-cc.dash.nixi1.com/#/'
   },
   {
     index: 'arkadius',
