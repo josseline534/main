@@ -1,0 +1,55 @@
+.cardContainer {
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 350px;
+  text-align: left;
+  position: relative;
+  margin: 1rem  1rem 1rem 0;
+
+  .contentImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .techLogo {
+      width: 30px;
+      height: 30px;
+      padding: 0.5rem;
+      border-radius: 15px;
+    }
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .details {
+    .detailsContent {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .iconContent {
+        margin-right: 1rem;
+      }
+
+      p {
+        width: 120px;
+        margin: 5px 0;
+        font-size: 0.9em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        strong {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

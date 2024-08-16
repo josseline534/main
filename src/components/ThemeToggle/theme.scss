@@ -1,0 +1,413 @@
+@import '../../styles/variables';
+
+// Estilos globales
+body {
+  margin-top: 60px;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.light-mode {
+  background-color: $color-light-background;
+  color: $color-light-text;
+}
+
+body.dark-mode {
+  background-color: $color-dark-background;
+  color: $color-dark-text;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 10px $color-light-hover-text-shadow;
+  }
+}
+
+span {
+  &.errorForm {
+    margin-top: -10px;
+    font-size: 0.8rem;
+    color: $color-error-text;
+  }
+}
+
+.techLogo {
+  &.greenDark {
+    color: #00a15a;
+  }
+
+  &.black {
+    color: $color-light-text;
+  }
+
+  &.lightBlue {
+    color: #1399c4;
+  }
+
+  &.greenLight {
+    color: #72b355;
+  }
+
+  &.yellow {
+    color: $color-light-text;
+  }
+
+  &.blue {
+    color: #0066ad;
+  }
+
+  &.purple {
+    color: #7377ad;
+  }
+
+  &.purpleDark {
+    color: #7c18f8;
+  }
+
+  &.red {
+    color: #a03333;
+  }
+
+  &.fucsia {
+    color: #e63bae;
+  }
+
+  &.lightRed {
+    color: #c50836;
+  }
+
+  &.pink {
+    color: #ce6b9c;
+  }
+
+  &.orange {
+    color: #f05539;
+  }
+}
+
+.contactFormContainer {
+  .content {
+    .contactForm {
+      border: $color-light-hover-text-shadow 1px solid;
+      box-shadow: 10px 10px 20px $color-light-hover-text-shadow;
+    }
+  }
+}
+
+.linkedIn {
+  a {
+    color: $color-light-hover-text;
+    .iconLink {
+      color: $color-light-hover-text;
+    }
+  }
+}
+
+body.light-mode {
+  button {
+    background-color: $color-light-button-background;
+    color: $color-light-button-text;
+    position: relative;
+  }
+
+  button.btnOutLine {
+    background-color: transparent;
+
+    &:hover {
+      color: $color-light-hover-text;
+    }
+  }
+
+  button.btnLine {
+    background-color: transparent;
+    border: $color-light-button-text 1px solid;
+    &:hover {
+      transition: all 0.5s ease;
+      color: $color-light-hover-text;
+      border: $color-light-hover-text solid 1px;
+      box-shadow: 2px 2px 10px $color-light-hover-text-shadow;
+    }
+  }
+
+  div.divider {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-top: $color-light-border 1px solid;
+  }
+
+  .appHeader {
+    background-color: $color-light-background;
+    color: $color-light-text;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+    a {
+      color: $color-light-text;
+      &:hover {
+        color: $color-light-hover-text;
+      }
+
+      &.logo:hover {
+        color: $color-light-text;
+      }
+    }
+  }
+
+  .homeContainer {
+    .badge {
+      background-color: $color-light-background-badge;
+      color: $color-light-text-badge;
+    }
+  }
+
+  .aboutMeContainer {
+    background-color: $color-light-background;
+    color: $color-light-text;
+
+    strong {
+      color: $color-light-hover-text;
+    }
+
+    .imageContainer {
+      .borderBehind {
+        border: 2px solid $color-light-border;
+      }
+    }
+
+    .socialIcons {
+      a {
+        color: $color-light-text;
+        border: $color-light-text solid 1px;
+
+        &:hover {
+          color: $color-light-hover-text;
+          border: $color-light-hover-text solid 1px;
+          box-shadow: 2px 2px 10px $color-light-hover-text-shadow;
+        }
+      }
+    }
+  }
+
+  .mainStackContainer {
+    background-image: url('../../assets/img/stackLight.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .cardContainer {
+      background: rgba(226, 226, 226, 0.25);
+      box-shadow: 0 4px 30px rgba(226, 2269, 226, 0.1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(226, 226, 226, 0.3);
+
+      .contentImage {
+        .techLogo {
+          background: $color-light-background-logo;
+        }
+      }
+
+      .details {
+        p {
+          strong {
+            color: $color-light-border;
+          }
+        }
+      }
+    }
+  }
+
+  .companiesContainer {
+    .content {
+      .contentCompany {
+        h4 {
+          color: $color-light-text;
+        }
+      }
+    }
+  }
+
+  .contactFormContainer {
+    .content {
+      .contactForm {
+        form {
+          input,
+          textarea {
+            border: $color-light-hover-text-shadow solid 1px;
+            border-radius: 5px;
+            background-color: $color-light-background;
+            color: $color-light-text;
+            &.errorField {
+              border: $color-error-text solid 1px;
+            }
+
+            &::placeholder {
+              color: $color-light-border;
+            }
+
+            &:focus {
+              border: $color-light-text-badge solid 1px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.dark-mode {
+  button {
+    background-color: $color-dark-button-background;
+    color: $color-dark-button-text;
+  }
+
+  button.btnOutLine {
+    background-color: transparent;
+  }
+
+  button.btnLine {
+    background-color: transparent;
+    border: $color-dark-button-text 1px solid;
+    &:hover {
+      transition: all 0.5s ease;
+      color: $color-light-hover-text;
+      border: $color-light-hover-text solid 1px;
+      box-shadow: 2px 2px 10px $color-light-hover-text-shadow;
+    }
+  }
+
+  .appHeader {
+    background-color: $color-dark-background;
+    color: $color-dark-text;
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1);
+
+    a {
+      color: $color-dark-text;
+      &:hover {
+        color: $color-dark-hover-text;
+      }
+
+      &.logo:hover {
+        color: $color-dark-text;
+      }
+    }
+  }
+
+  .homeContainer {
+    .badge {
+      background-color: $color-dark-background-badge;
+      color: $color-dark-text-badge;
+    }
+  }
+
+  .aboutMeContainer {
+    strong {
+      color: $color-light-background-badge;
+    }
+
+    .imageContainer {
+      .borderBehind {
+        border: 2px solid $color-light-border;
+      }
+    }
+
+    .socialIcons {
+      a {
+        color: $color-dark-text;
+        border: $color-dark-text solid 1px;
+
+        &:hover {
+          color: $color-dark-hover-text;
+          border: $color-dark-hover-text solid 1px;
+          box-shadow: 2px 2px 10px $color-light-hover-text-shadow;
+        }
+      }
+    }
+  }
+
+  .mainStackContainer {
+    background-image: url('../../assets/img/stackDark.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .cardContainer {
+      background: rgba(0, 9, 14, 0.225);
+      box-shadow: 0 4px 30px rgba(0, 9, 14, 0.1);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 9, 14, 0.3);
+
+      .techLogo {
+        background: $color-dark-background-badge;
+      }
+    }
+  }
+
+  .techLogo {
+    &.black {
+      color: $color-dark-text;
+    }
+    &.yellow {
+      color: #efd81d;
+    }
+  }
+
+  .companiesContainer {
+    .content {
+      .contentCompany {
+        img {
+          background-color: $color-dark-text;
+        }
+
+        h4 {
+          color: $color-dark-text;
+        }
+      }
+    }
+  }
+
+  .contactFormContainer {
+    .content {
+      .contactForm {
+        form {
+          input,
+          textarea {
+            border: $color-light-text-badge solid 1px;
+            border-radius: 5px;
+            background-color: $color-dark-background;
+            color: $color-dark-text;
+
+            &.errorField {
+              border: $color-error-text solid 1px;
+            }
+
+            &::placeholder {
+              color: $color-light-border;
+            }
+
+            &:focus {
+              border: $color-light-hover-text-shadow solid 1px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

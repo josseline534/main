@@ -1,0 +1,63 @@
+.skillsContainer {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    max-width: 1000px;
+    margin: 1.5rem 0;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      font-weight: bold;
+      margin: 1.5rem 0;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin: 1.5rem 0;
+      max-width: 800px;
+      margin: 0 auto;
+      font-style: italic;
+      line-height: 1.5rem;
+    }
+
+    .linkedIn {
+      margin: 1.5rem 0 3rem 0;
+      a {
+        text-decoration: none;
+
+        .iconLink {
+          font-weight: 800;
+        }
+      }
+    }
+
+    .skillsIcons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      flex-direction: row;
+
+      div {
+        text-align: center;
+
+        .techLogo {
+          width: 50px;
+          height: 50px;
+        }
+
+        p{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}

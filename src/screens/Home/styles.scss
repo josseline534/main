@@ -1,0 +1,68 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  min-height: 80vh;
+
+  .content {
+    max-width: 600px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+
+  .buttons {
+    .btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+    }
+  }
+
+  .imageContainer {
+    margin-top: 1rem;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+    flex-direction: row;
+    text-align: left;
+
+    .content {
+      text-align: left;
+      margin-right: 2rem;
+    }
+
+    .imageContainer {
+      margin-top: 0;
+    }
+  }
+}

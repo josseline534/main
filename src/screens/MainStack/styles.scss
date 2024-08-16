@@ -1,0 +1,30 @@
+.mainStackContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  .content {
+    max-width: 1000px;
+    margin: 1.5rem 0;
+  }
+
+  .cardContent {
+    margin: 3.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+
+    &.slick-slider.slick-initialized{
+      .slick-list{
+        .slick-slide {
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.1);
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+}
