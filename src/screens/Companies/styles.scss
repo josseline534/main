@@ -35,3 +35,28 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .companiesContainer {
+    width: 100%;
+    margin-left: .5rem;
+  }
+}
+
+@media (min-width: 652px) and (max-width: 767px) {
+  .companiesContainer {
+    width: 145%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 651px) {
+  .companiesContainer {
+    width: 275%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 424px) {
+  .companiesContainer {
+    width: 275%;
+  }
+}

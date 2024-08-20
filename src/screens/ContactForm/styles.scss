@@ -90,3 +90,37 @@
     }
   }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactFormContainer {
+    width: 100%;
+    margin-left: .5rem;
+    .content {
+      .contact-image {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 652px) and (max-width: 767px) {
+  .contactFormContainer {
+    width: 145%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 651px) {
+  .contactFormContainer {
+    width: 275%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 424px) {
+  .contactFormContainer {
+    width: 275%;
+
+  }
+}

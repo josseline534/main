@@ -1,9 +1,9 @@
 .aboutMeContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 
   .content {
@@ -37,15 +37,15 @@
       display: flex;
       align-items: center;
       margin-bottom: 0;
-      .btnIcon{
-        margin-right: .2rem;
+      .btnIcon {
+        margin-right: 0.2rem;
       }
     }
 
     .socialIcons {
       display: flex;
       a {
-        margin-right: .8rem;
+        margin-right: 0.8rem;
         font-size: 1.2rem;
         transition: color 0.3s;
         width: 40px;
@@ -55,7 +55,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        transition: all .4s;
+        transition: all 0.4s;
         border-radius: 50%;
         transition: box-shadow 0.3s ease;
 
@@ -63,10 +63,9 @@
           background: transparent;
         }
 
-        &:hover{
+        &:hover {
           transform: scale(1.05);
         }
-
       }
     }
   }
@@ -84,7 +83,7 @@
       z-index: 2;
       position: relative;
 
-      &:hover{
+      &:hover {
         filter: grayscale(0%);
         transform: scale(1.02);
       }
@@ -103,18 +102,33 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aboutMeContainer {
+    width: 100%;
+    margin-left: 1rem;
+    .content {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (min-width: 652px) and (max-width: 767px) {
+  .aboutMeContainer {
+    text-align: left;
+    width: 145%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 651px) {
   .aboutMeContainer {
     flex-direction: row;
-    text-align: left;
+    width: 275%;
+  }
+}
 
-    .content {
-      text-align: left;
-      margin-right: 2rem;
-    }
-
-    .imageContainer {
-      margin-top: 0;
-    }
+@media (min-width: 200px) and (max-width: 424px) {
+  .aboutMeContainer {
+    flex-direction: column;
+    width: 275%;
   }
 }

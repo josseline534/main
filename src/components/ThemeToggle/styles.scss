@@ -8,3 +8,9 @@
   align-items: center;
   margin-right: 5rem;
 }
+
+@media (max-width: 1024px) {
+  .buttonMode {
+    margin-right: 1rem;
+  }
+}
