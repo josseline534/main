@@ -119,6 +119,22 @@ span {
   }
 }
 
+.footer {
+  background-color: $color-dark-button-background;
+  color: $color-dark-button-text;
+
+  .footerContent{
+    .footerSocials {
+      a {
+        color: $color-dark-text;
+        &:hover {
+          color: $color-light-hover-text;
+        }
+      }
+    }
+  }
+}
+
 body.light-mode {
   button {
     background-color: $color-light-button-background;
