@@ -15,25 +15,37 @@ const AppBar: React.FC = () => {
 
   return (
     <header className={'appHeader'}>
-      <a href="#home" className="logo">
-        <img src={myLogo} alt={'Josseline Sánchez'} />
-        <div>Joss Sánchez</div>
-      </a>
-      <nav className="nav">
-        <a href="#aboutMe">Acerca de mí...</a>
-        <a href="#mainStack">Stack</a>
-        <a href="#skills">Tecnologías</a>
-        <a href="#companies">Empresas</a>
-        <a href="#contactForm">Contactos</a>
-      </nav>
-      <nav className="navMobile">
-        <a href="#aboutMe"><SiAboutdotme className='icon'/></a>
-        <a href="#mainStack"><GoStack className='icon'/></a>
-        <a href="#skills"><HiOutlineDesktopComputer className='icon'/></a>
-        <a href="#companies"><IoBusinessOutline className='icon'/></a>
-        <a href="#contactForm"><MdOutlineContactMail className='icon'/></a>
-      </nav>
-      <ThemeToggle />
+      <div className='contentHeader'>
+        <a href="#home" className="logo">
+          <img src={myLogo} alt={'Josseline Sánchez'} />
+          <div>Joss Sánchez</div>
+        </a>
+        <nav className="nav">
+          <a href="#aboutMe">Acerca de mí...</a>
+          <a href="#mainStack">Stack</a>
+          <a href="#skills">Tecnologías</a>
+          <a href="#companies">Empresas</a>
+          <a href="#contactForm">Contactos</a>
+        </nav>
+        <nav className="navMobile">
+          <a href="#aboutMe">
+            <SiAboutdotme className="icon" />
+          </a>
+          <a href="#mainStack">
+            <GoStack className="icon" />
+          </a>
+          <a href="#skills">
+            <HiOutlineDesktopComputer className="icon" />
+          </a>
+          <a href="#companies">
+            <IoBusinessOutline className="icon" />
+          </a>
+          <a href="#contactForm">
+            <MdOutlineContactMail className="icon" />
+          </a>
+        </nav>
+        <ThemeToggle />
+      </div>
     </header>
   )
 }
