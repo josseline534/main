@@ -1,5 +1,5 @@
 .skillsContainer {
-  padding: 20px;
+  padding: 2rem 0 0 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -62,27 +62,8 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .skillsContainer {
-    width: 100%;
-    margin-left: 1rem;
-  }
-}
-
-@media (min-width: 652px) and (max-width: 767px) {
-  .skillsContainer {
-    width: 145%;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 651px) {
-  .skillsContainer {
-    width: 275%;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 424px) {
-  .skillsContainer {
-    width: 275%;
+    padding: 2rem 2rem 0 2rem;
   }
 }

@@ -4,75 +4,80 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
+  padding: 10px 1rem;
   border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .contentHeader {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-left: 5rem;
-    text-decoration: none;
+    justify-content: space-between;
+    width: 90%;
 
-    img {
-      width: 3rem;
-    }
-  }
-  .navMobile {
-    display: none;
-  }
-
-  .nav {
-    display: flex;
-    gap: 30px;
-
-    a {
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       text-decoration: none;
-      font-size: 1rem;
-    }
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .appHeader {
-    .logo {
-      margin-left: 1rem;
+      img {
+        width: 3rem;
+      }
     }
-  }
-}
 
-@media (width: 768px) {
-  .appHeader {
-    .logo {
-      width: 350px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .appHeader {
-    width: 100%;
-    .logo {
-      margin-left: 1rem;
-    }
-    .nav {
+    .navMobile {
       display: none;
     }
-    .navMobile {
+
+    .nav {
       display: flex;
-      gap: 15px;
-      .icon {
-        font-size: 1.5rem;
+      gap: 30px;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
       }
     }
   }
 }
 
+/*
+  Tablet
+  Mobile
+ */
+@media (max-width: 1024px) {
+  .appHeader {
+    justify-content: space-between;
+    .contentHeader {
+      width: 92%;
+      .nav {
+        display: none;
+      }
+      .navMobile {
+        display: flex;
+        gap: 15px;
+
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+  .appHeader {
+    justify-content: center;
+    width: 98%;
+  }
+}
+
+// Mobile
 @media (max-width: 500px) {
   .appHeader {
     .logo {

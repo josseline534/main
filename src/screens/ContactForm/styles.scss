@@ -5,13 +5,13 @@
   flex-direction: column;
   padding: 2rem;
 
-  .contentTitle{
+  .contentTitle {
     width: 100%;
     max-width: 1000px;
     text-align: left;
   }
 
-  .content{
+  .content {
     display: flex;
     align-items: center;
     max-width: 1000px;
@@ -34,7 +34,8 @@
           font-size: 1rem;
         }
 
-        input, textarea {
+        input,
+        textarea {
           padding: 10px;
           border: none;
           border-radius: 5px;
@@ -74,29 +75,14 @@
       }
     }
   }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-
-    .contact-form {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-
-    .contact-image {
-      img {
-        max-width: 100%;
-      }
-    }
-  }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .contactFormContainer {
-    width: 100%;
-    margin-left: .5rem;
     .content {
+      .contactForm {
+        margin-right: 2rem;
+      }
       .contact-image {
         img {
           max-width: 300px;
@@ -106,21 +92,23 @@
   }
 }
 
-@media (min-width: 652px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .contactFormContainer {
-    width: 145%;
+    .content {
+      flex-direction: column;
+      align-items: normal;
+      gap: 1rem;
+      max-width: 100%;
+      .contactForm {
+        border: green solid 1px;
+        max-width: 88%;
+      }
+      .contact-image {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
   }
 }
 
-@media (min-width: 425px) and (max-width: 651px) {
-  .contactFormContainer {
-    width: 275%;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 424px) {
-  .contactFormContainer {
-    width: 275%;
-
-  }
-}

@@ -29,31 +29,10 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .mainStackContainer {
-    width: 100%;
-    padding-right: 2.4rem ;
-    padding-left: 2.4rem ;
     .content {
-      width: 100%;
-    }
-  }
-}
-
-@media (min-width: 652px) and (max-width: 767px) {
-  .mainStackContainer {
-    width: 145%;
-    .content {
-      max-width: 900px;
-    }
-  }
-}
-
-@media (min-width: 200px) and (max-width: 651px) {
-  .mainStackContainer {
-    width: 275%;
-    .content {
-      max-width: 900px;
+      width: 98%;
     }
   }
 }
